@@ -7,14 +7,13 @@
 <meta name="description" content="Клубника в шоколаде, букеты из клубники, сухофруктов и орехов, подарочные боксы ручной работы. Уфа, самовывоз и доставка. Мастер Яна.">
 <meta property="og:title" content="Frukt_buket — клубника в шоколаде в Уфе">
 <meta property="og:description" content="Съедобные букеты и клубника в шоколаде ручной работы. Дарите эмоции.">
-<meta property="og:image" content="assets/img/hero-m.webp">
-<meta name="theme-color" content="#2B1813">
+<meta property="og:image" content="assets/img/box-ai.webp">
+<meta name="theme-color" content="#FBF1EE">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%93%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/img/hero.webp" media="(min-width: 761px)">
-<link rel="preload" as="image" href="assets/img/hero-m.webp" media="(max-width: 760px)">
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/bouquet-ai.webp">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -38,38 +37,43 @@
     <a href="#about">О мастере</a>
     <a href="#school">Обучение</a>
   </nav>
-  <a class="btn btn--berry topbar__cta" href="#catalog">Выбрать подарок</a>
+  <a class="btn btn--accent topbar__cta" href="#catalog">Выбрать подарок</a>
   <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
 </header>
 
 <main>
 
-<!-- 1. Главный экран -->
+<!-- 1. Главный экран: коллаж во весь экран -->
 <section class="hero">
-  <picture class="hero__bg">
-    <source media="(max-width: 760px)" srcset="assets/img/hero-m.webp">
-    <img src="assets/img/hero.webp" alt="Букет из клубники в шоколаде, малины, голубики и ежевики в чёрной упаковке" width="2400" height="1340">
-  </picture>
-  <div class="hero__word" aria-hidden="true">клубника</div>
-  <picture class="hero__front" aria-hidden="true">
-    <source media="(max-width: 760px)" srcset="assets/img/hero-m.webp">
-    <img src="assets/img/hero.webp" alt="" width="2400" height="1340">
-  </picture>
-  <div class="hero__content">
-    <p class="eyebrow eyebrow--light">Ручная работа · Уфа</p>
-    <h1>Клубника в шоколаде<br><em>и съедобные букеты</em></h1>
+  <div class="mosaic" aria-hidden="true">
+    <figure class="tall"><img src="assets/img/bouquet-ai.webp" alt=""></figure>
+    <figure><img src="assets/img/p04.webp" alt=""></figure>
+    <div class="t t--pink"><span class="t__big">yes,<br>please.</span><span class="t__small">клубника, которую не хочется делить</span></div>
+    <figure><img src="assets/img/tile-dip.webp" alt=""></figure>
+    <figure class="tall"><img src="assets/img/box-ai.webp" alt=""></figure>
+    <figure><img src="assets/img/p10.webp" alt=""></figure>
+    <figure class="hide-m"><img src="assets/img/p03.webp" alt=""></figure>
+    <figure class="hide-m"><img src="assets/img/p02.webp" alt=""></figure>
+    <figure><img src="assets/img/tile-chocolate.webp" alt=""></figure>
+    <div class="t t--berry hide-m"><span class="script">Дарите</span><span class="t__big t__big--up">эмоции</span></div>
+    <figure class="hide-m"><img src="assets/img/p08.webp" alt=""></figure>
+    <figure class="hide-m"><img src="assets/img/p09.webp" alt=""></figure>
+    <div class="t t--cream hide-m"><span class="script">ручная</span><span class="t__big t__big--up">работа</span></div>
+  </div>
+  <div class="hero__card">
+    <p class="eyebrow">Ручная работа · Уфа</p>
+    <h1>Клубника в шоколаде <em>и съедобные букеты</em></h1>
     <p class="hero__lead">Собираю подарки, которые сначала удивляют, а потом съедаются до последней ягоды. Состав, цвета и оформление — под ваш повод.</p>
     <div class="hero__actions">
-      <a class="btn btn--berry" href="#catalog">Смотреть каталог</a>
-      <a class="btn btn--ghost" href="tel:+79178071985">8 917 807-19-85</a>
+      <a class="btn btn--accent" href="#catalog">Смотреть каталог</a>
+      <a class="btn btn--line" href="tel:+79178071985">8 917 807-19-85</a>
     </div>
-    <p class="hero__note script">дарите эмоции ♡</p>
   </div>
 </section>
 
 <!-- Бегущая строка -->
 <div class="ticker" aria-hidden="true">
-  <svg class="drip drip--top-hero" aria-hidden="true"><use href="#drip"/></svg>
+  <svg class="drip drip--from-bg" aria-hidden="true"><use href="#drip"/></svg>
   <div class="ticker__track">
     <span>Клубника в шоколаде</span><i>✦</i><span>Букеты из клубники</span><i>✦</i><span>Сухофрукты и орехи</span><i>✦</i><span>Мужские букеты</span><i>✦</i><span>Подарки воспитателю</span><i>✦</i><span>Самовывоз и доставка по Уфе</span><i>✦</i>
     <span>Клубника в шоколаде</span><i>✦</i><span>Букеты из клубники</span><i>✦</i><span>Сухофрукты и орехи</span><i>✦</i><span>Мужские букеты</span><i>✦</i><span>Подарки воспитателю</span><i>✦</i><span>Самовывоз и доставка по Уфе</span><i>✦</i>
@@ -106,27 +110,9 @@
   </div>
 </section>
 
-<!-- 3. Коллаж -->
-<section class="collage-sec">
-  <svg class="drip drip--top-cream drip--flip" aria-hidden="true"><use href="#drip"/></svg>
-  <div class="wrap">
-    <div class="collage">
-      <figure class="c c--photo"><img src="assets/img/p04.webp" alt="Клубника в белом шоколаде" loading="lazy"></figure>
-      <figure class="c c--photo"><img src="assets/img/tile-dip.webp" alt="Клубнику окунают в растопленный шоколад" loading="lazy"></figure>
-      <div class="c c--type c--red"><span class="c__big">yes,<br>please.</span><span class="c__small">клубника, которую не хочется делить</span></div>
-      <figure class="c c--photo"><img src="assets/img/tile-chocolate.webp" alt="Растопленный молочный шоколад" loading="lazy"></figure>
-      <div class="c c--type c--cream"><span class="c__script">Дарите</span><span class="c__big">эмоции</span></div>
-      <figure class="c c--photo"><img src="assets/img/p03.webp" alt="Клубника в шоколаде в коробке в форме буквы М" loading="lazy"></figure>
-      <div class="c c--type c--choc"><span class="c__big">ручная<br>работа</span><span class="c__small">каждый подарок собирается под ваш повод</span></div>
-      <figure class="c c--photo"><img src="assets/img/p10.webp" alt="Клубника в шоколаде с голубикой и малиной в розовой коробке" loading="lazy"></figure>
-      <figure class="c c--photo"><img src="assets/img/p01.webp" alt="Букет из клубники и ягод в чёрной упаковке" loading="lazy"></figure>
-    </div>
-  </div>
-</section>
-
 <!-- 4. Каталог -->
 <section class="catalog section" id="catalog">
-  <svg class="drip drip--top-dark" aria-hidden="true"><use href="#drip"/></svg>
+  <svg class="drip drip--from-bg drip--flip" aria-hidden="true"><use href="#drip"/></svg>
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Каталог</p>
@@ -146,11 +132,11 @@
 </section>
 
 <!-- 5. Как заказать -->
-<section class="order section section--dark" id="order">
-  <svg class="drip drip--top-cream" aria-hidden="true"><use href="#drip"/></svg>
+<section class="order section" id="order">
+  <svg class="drip drip--from-blush" aria-hidden="true"><use href="#drip"/></svg>
   <div class="wrap">
-    <div class="section-head section-head--light">
-      <p class="eyebrow eyebrow--light">Как заказать</p>
+    <div class="section-head">
+      <p class="eyebrow">Как заказать</p>
       <h2>Четыре шага до <em>подарка</em></h2>
     </div>
     <ol class="steps">
@@ -178,7 +164,7 @@
 
 <!-- 6. Отзывы: коробка конфет -->
 <section class="reviews section" id="reviews">
-  <svg class="drip drip--top-dark drip--flip" aria-hidden="true"><use href="#drip"/></svg>
+  <svg class="drip drip--from-rose drip--flip" aria-hidden="true"><use href="#drip"/></svg>
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Отзывы</p>
@@ -224,11 +210,11 @@
 </section>
 
 <!-- 8. Обучение -->
-<section class="school section section--dark" id="school">
-  <svg class="drip drip--top-cream" aria-hidden="true"><use href="#drip"/></svg>
+<section class="school section" id="school">
+  <svg class="drip drip--from-bg" aria-hidden="true"><use href="#drip"/></svg>
   <div class="wrap school__grid">
     <div class="school__text">
-      <p class="eyebrow eyebrow--light">Обучение</p>
+      <p class="eyebrow">Обучение</p>
       <h2>Научу делать <em>так же</em></h2>
       <p class="school__lead">Хочешь зарабатывать на фудфлористике? Обучу с нуля: за 3 дня создашь свой первый букет и поймёшь, как это монетизировать.</p>
       <ul class="school__list">
@@ -237,7 +223,7 @@
         <li><span>✦</span>Урок по финикам в шоколаде — <b>990 ₽</b></li>
       </ul>
       <div class="school__cta">
-        <a class="btn btn--berry" href="https://ig.me/m/frukt_buket.ufa" target="_blank" rel="noopener">Написать «БУКЕТ»</a>
+        <a class="btn btn--accent" href="https://ig.me/m/frukt_buket.ufa" target="_blank" rel="noopener">Написать «БУКЕТ»</a>
         <p>и получи бесплатный гайд, как начать с нуля</p>
       </div>
     </div>
@@ -252,7 +238,7 @@
 
 <!-- 9. Контакты -->
 <footer class="footer" id="contacts">
-  <svg class="drip drip--top-dark" aria-hidden="true"><use href="#drip"/></svg>
+  <svg class="drip drip--from-choc drip--flip" aria-hidden="true"><use href="#drip"/></svg>
   <div class="wrap footer__grid">
     <div>
       <span class="logo__mark logo__mark--big">Frukt_buket</span>
@@ -285,7 +271,7 @@
     <h3 id="modal-title">Позиция</h3>
     <p class="modal__hint">Выберите, как удобнее написать. Текст заказа уже готов — останется добавить дату и пожелания.</p>
     <div class="modal__actions">
-      <a class="btn btn--berry" id="m-wa" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn--accent" id="m-wa" target="_blank" rel="noopener">WhatsApp</a>
       <a class="btn btn--dark" id="m-ig" href="https://ig.me/m/frukt_buket.ufa" target="_blank" rel="noopener">Instagram</a>
       <a class="btn btn--line" href="tel:+79178071985">Позвонить</a>
     </div>
